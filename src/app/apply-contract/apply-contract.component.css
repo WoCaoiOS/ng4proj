@@ -1,0 +1,97 @@
+section{
+	padding-top: 20px;
+	padding-right: 10px;
+}
+.tips_box{
+	color: #333;
+	font-size: 15px;
+	width: 98%;
+	padding: 0 10px 10px;
+	margin:auto;
+	border-bottom: 1px solid rgb(219,219,219)
+}
+.tips_box span{
+	color: #a0a0a0;
+	font-size: 13px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	background: url(../../assets/help.png) no-repeat left center;
+}
+.nav-link{
+	color: #333;
+	font-size: 15px;
+}
+.active{
+	position: relative;
+	color: rgb(246,162,0);
+}
+.active:after{
+	content: "";
+	position: absolute;
+	width: 80%;
+	height: 2px;
+	background : rgb(246,162,0);
+	left: 10%;
+	bottom: 0;
+}
+section nav{
+	padding-left: 10px;
+}
+.apply_box{
+	padding-left: 
+}
+.row div{
+	font-size: 15px;
+}
+.col-2{
+	text-align: right;
+	color: rgb(97,97,97);
+}
+.col-5,.col-7{
+	padding-left: 0;
+}
+.row{
+	margin: 20px 0;
+}
+.number_text{
+	margin: 0px;
+}
+label{
+	margin-right: 20px;
+}
+.col-5 select{
+	margin-bottom: 10px;
+}
+.col-5 div{
+	color: #a0a0a0;
+	font-size: 13px;
+	margin-top: 5px;
+}
+.introduce_text{
+	height: 100px;
+	resize: none;
+}
+.btn-primary{
+	font-weight: normal;
+	font-size: 13px;
+	width: 80px;
+	height: 40px;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+td{
+	width: 20%;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	color: rgb(41,42,44);
+}
+thead td{
+	background: rgb(246,246,246);
+	color: rgb(163,163,163);
+}
+tbody td{
+	border-bottom: 1px dotted rgb(229,229,229)
+}

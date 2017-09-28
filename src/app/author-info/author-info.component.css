@@ -1,0 +1,45 @@
+section{
+	padding-top: 20px;
+	padding-right: 10px;
+}
+.tips_box{
+	color: #333;
+	font-size: 16px;
+	width: 98%;
+	padding: 0 10px 10px;
+	margin:auto;
+	border-bottom: 1px solid rgb(219,219,219)
+}
+.tips_box span{
+	color: #a0a0a0;
+	font-size: 13px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	background: url(../../assets/help.png) no-repeat left center;
+}
+.head_pic{
+	width: 100px;
+	border-radius: 50%;
+}
+.introduce_text{
+	height: 100px;
+	resize: none;
+}
+.col-3{
+	text-align: right;
+	color: #a0a0a0;
+}
+.col-5,.col-7{
+	padding-left: 0;
+}
+.row{
+	margin-bottom: 20px;
+}
+label{
+	margin-right: 20px;
+}
+.btn-primary{
+	font-weight: normal;
+	font-size: 13px;
+	width: 80px;
+}

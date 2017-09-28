@@ -1,0 +1,60 @@
+<div class="container-fluid">
+	<section>
+		<div class="tips_box"><span></span>作者后台新手指南</div>
+		<div class="info_box">
+			<div class="row">
+			    <div class="col-2">
+			      <img class="head_pic" src="../../assets/head.jpg" alt="">
+			    </div>
+			    <div class="col-6">
+			      <div class="text_info">
+			      	<div>
+						姓名：<span>{{name}}</span>编号：<span>{{serialNo}}</span>
+			      	</div>
+					<div>
+						等级：<span class="level_icon"></span>等级划分和功能特权
+					</div>
+					<div>
+						累计财富值为：<span>{{totalMomey}}</span>
+					</div>
+					<div>
+						可用财富值为：<span>{{canUseMoney}}</span>
+					</div>
+			      </div>
+			    </div>
+			    <div class="col-4 clearfix text_info">
+			    	<div class="fl">存余<div>{{surplusMoney}}</div></div>
+			    	<div class="fl">已结算<div>{{balanceMoney}}</div></div>
+			    	<div class="fl">总稿费<div>{{totalIncome}}</div></div>
+			    </div>
+			 </div>
+		</div>
+	</section>
+	<section class="notice_box">{{noticeInfo}}</section>
+	<section>
+		<div class="book_list_box">
+			<div>我的作品（{{bookList.length}}）<button type="button" class="btn btn-primary btn-sm fr">创建新书</button></div>
+			<ul>
+				<li *ngFor="let book of bookList;let i = index;">
+					<div class="row">
+						<div class="col-2">
+							<img class="book_img" src="{{book.img}}" alt="">
+						</div>
+						<div class="col-6">
+							<div>{{book.name}} <span>审核中</span></div>
+							<div><span>书号{{book.id}}</span><span>推荐票{{book.fcount}}</span><span>浏览数{{book.count}}</span></div>
+						</div>
+						<div class="col-4">
+							<div class="fr d_in_bl">
+								<button type="button" class="btn btn-primary">写新章节</button>
+								<span>管理</span>
+								<span (click)="deleteBook(i)">删除</span>
+							</div>
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>

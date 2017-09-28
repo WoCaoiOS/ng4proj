@@ -1,0 +1,38 @@
+<div class="container-fluid">
+	<section>
+		<div class="tips_box clearfix">稿费查询<span class="fr">销售及稿费说明</span></div>
+	</section>
+	<section class="clearfix">
+		<nav class="nav fl">
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==1}" (click)="changeSegment(1)" routerLink="/query-income/royalties-bill" routerLinkActive="true">稿费账单</a>
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==2}" (click)="changeSegment(2)" routerLink="/query-income/reward-detail" routerLinkActive="true">奖励金明细</a>
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==3}" (click)="changeSegment(3)" routerLink="/query-income/authorize-income" routerLinkActive="true">授权收入</a>
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==4}" (click)="changeSegment(4)" routerLink="/query-income/leftovers-detail" routerLinkActive="true">存余明细</a>	 
+		</nav> 
+		<div class="fr clearfix royalties_info">
+			总稿酬：<span>{{royalties.total}}元</span>已结算：<span>{{royalties.settled}}</span>存余：<span>{{royalties.total-royalties.settled}}</span>
+		</div>
+	</section>
+	
+	<section>
+		<div class="date_box">
+			<form class="form-inline">
+				查询月份
+				<select name="year" class="form-control-sm col-2" [(ngModel)]="info.year">
+		     		<option *ngFor="let year of years" [value]="year.value">
+		       		{{year.display}}
+		    		</option>
+		    	</select>
+					 <select name="month" class="form-control-sm col-2" [(ngModel)]="info.month">
+		     		<option *ngFor="let month of months" [value]="month.value">
+		       		{{month.display}}
+		    		</option>
+		    	</select>
+				<button type="button" class="btn btn-primary btn-sm">查看</button>
+			</form>
+		</div>
+	</section>
+	<section class="table_infos">
+		 <router-outlet></router-outlet>
+	</section>
+</div>

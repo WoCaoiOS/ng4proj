@@ -1,0 +1,20 @@
+<div class="container-fluid">
+	<table>
+		<thead>
+			<tr>
+				<td>书籍标题</td>
+				<td>签约性质</td>
+				<td>更新字数</td>
+				<td>合计</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let info of infoList">
+				<td>《{{info.bookTitle}}》</td>
+				<td>{{info.authorize}}</td>
+				<td>{{info.wordsCount}}</td>
+				<td>{{info.total}}元</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

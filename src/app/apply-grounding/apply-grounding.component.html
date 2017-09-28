@@ -1,0 +1,63 @@
+<div class="container-fluid">
+	<section>
+		<div class="tips_box clearfix">申请上架<span class="fr">什么是上架</span></div>
+	</section>
+	<section class="clearfix">
+		<nav class="nav ">
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==1}" (click)="changeSegment(1)">申请签约</a>
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==2}" (click)="changeSegment(2)">申请结果</a>
+		</nav>
+	</section>
+	<section class="content_box">
+		<div class="apply_box" *ngIf="tabIndex==1">
+			<div class="row">
+			  	<div class="col-2">作品选择</div>
+			  	<div class="col-5">
+				  	<select name="book" class="form-control" [(ngModel)]="book">
+						<option value="" style="display: none;">作品选择</option>
+			     		<option *ngFor="let book of bookList" [value]="book.value">
+			       		{{book.name}}
+			    		</option>
+			    	</select>
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-2">申请条件</div>
+				<div class="col-7" style="font-size: 12px;line-height: 22px;">已签约，字数男频30万，女频10万，个性化10万，最近三天内有更新</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-7">
+					<button type="button" class="btn btn-primary btn-sm">提交</button>
+				</div>
+			</div>
+			<div class="warn_info">
+				温馨提示：
+				<div>1.定位快东坡可我都饿靠谱</div>
+				<div>2.都我解耦我及诶就多问就定位为</div>
+			</div>
+		</div>
+		<div class="apply_result" *ngIf="tabIndex==2">
+			<table>
+				<thead>
+					<tr>
+						<td>书籍名称</td>
+						<td>申请时间</td>
+						<td>处理事件</td>
+						<td>状态</td>
+						<td>备注</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>《hi哦》</td>
+						<td>2017-09-23 15:30:20</td>
+						<td>2017-09-23 15:30:20</td>
+						<td>审核中</td>
+						<td>...</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</div>

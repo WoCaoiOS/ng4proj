@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+body{
+	background: rgb(249,249,249);
+}
+ul{
+	list-style: none;
+}
+.clearfix:after{
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.container-fluid{
+	padding: 0;
+}
+.btn-primary,.btn-primary:hover{
+	background: #F6A200;
+	border:#F6A200;
+	outline: none!important;
+}

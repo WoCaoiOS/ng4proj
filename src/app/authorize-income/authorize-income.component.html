@@ -1,0 +1,20 @@
+<div class="container-fluid">
+	<table>
+		<thead>
+			<tr>
+				<td>书籍名称</td>
+				<td>时间</td>
+				<td>类型</td>
+				<td>版权金额</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let info of infoList">
+				<td>《{{info.bookTitle}}》</td>
+				<td>{{info.date}}</td>
+				<td>{{info.type}}</td>
+				<td>{{info.momey}}元</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

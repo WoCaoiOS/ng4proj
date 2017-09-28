@@ -1,0 +1,87 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <header>
+    <div class="head_box">
+      <ul class="head_ul clearfix">
+        <li class="logo_box fl"><img src="../assets/logo.png" alt=""></li>
+        <li class="search_box fl">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="草木深">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button"></button>
+            </span>
+          </div>
+        </li>
+        <li class="right_box fl">
+          <div class="fr">
+            <div class="op_box fr"></div>
+            <div class="op_box fr"></div>
+            <div class="op_box fr"></div>
+            <div class="op_box fr"></div>
+            <div class="op_box fr"></div>
+          </div>
+            
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="clearfix">
+    <aside> 
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_head">我的信息</li>
+          <li [ngClass]="{'active':tabIndex==1}" (click)="onSelect(1)" routerLink="/home" routerLinkActive="true">作者后台首页</li>
+          <li [ngClass]="{'active':tabIndex==2}" (click)="onSelect(2)" routerLink="/author-info" routerLinkActive="true">我的资料</li>
+          <li class="nav_head">作品销售</li>
+          <li [ngClass]="{'active':tabIndex==3}" (click)="onSelect(3)" routerLink="/sale-statistics" routerLinkActive="true">销售统计</li>
+          <li [ngClass]="{'active':tabIndex==4}" (click)="onSelect(4)" routerLink="/query-income/royalties-bill" routerLinkActive="true">稿费查询</li>
+          <li class="nav_head">作者服务</li>
+          <li [ngClass]="{'active':tabIndex==5}" (click)="onSelect(5)" routerLink="/apply-contract" routerLinkActive="true">申请签约</li>
+          <li [ngClass]="{'active':tabIndex==6}" (click)="onSelect(6)" routerLink="/apply-grounding" routerLinkActive="true">申请上架</li>
+          <li [ngClass]="{'active':tabIndex==7}" (click)="onSelect(7)" routerLink="/comment-manager" routerLinkActive="true">书评管理</li>
+          <li [ngClass]="{'active':tabIndex==8}" (click)="onSelect(8)" routerLink="/works-data/works-statistics" routerLinkActive="true">作品数据</li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+  <footer>
+    <ul class="nav justify-content-center">
+      <li class="nav-item ">
+        <a class="nav-link " href="#">联系我们</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#">|</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">关于我们</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#">|</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">帮助中心</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#">|</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#">用户守则</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link " href="#">|</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">诚聘精英</a>
+      </li>
+    </ul>
+    <div>
+      本网站文件哦我今晚都IE京东激动而动为 对我家单位的窦唯蒋大为哦都未见得我的我都加我的的我觉得德外就
+    </div>
+    <div>&copy;急跌文件都几位哦</div>
+  </footer>
+</div>
+
+

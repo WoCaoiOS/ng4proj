@@ -1,0 +1,43 @@
+section{
+	padding-top: 20px;
+	/*padding-right: 10px;*/
+}
+.tips_box{
+	color: #333;
+	font-size: 15px;
+	width: 98%;
+	padding: 0 10px 10px;
+	margin:auto;
+	border-bottom: 1px solid rgb(219,219,219);
+	color: rgb(77,77,77);
+}
+.tips_box select{
+	width: 160px;
+	height: 30px;
+	border:1px solid rgb(240,240,240);
+	color: rgb(77,77,77);
+}
+.nav-link{
+	color: #333;
+	font-size: 15px;
+}
+.active{
+	position: relative;
+	color: rgb(246,162,0);
+}
+.active:after{
+	content: "";
+	position: absolute;
+	width: 80%;
+	height: 2px;
+	background : rgb(246,162,0);
+	left: 10%;
+	bottom: 0;
+}
+section nav{
+
+	padding-left: 10px;
+}
+.table_infos{
+	padding: 30px;
+}

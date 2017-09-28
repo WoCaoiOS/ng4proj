@@ -1,0 +1,49 @@
+<div class="container-fluid">
+	<div class="data_box row">
+		<div class="col-6 col-sm-3">
+			<div class="total_subscribe rounded">
+				<div class="sub_title">总订阅</div>
+				<div class="count_info"><span>{{subscribeData.total_subscribe}}</span>万K币</div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-3">
+			<div class="new_subscribe rounded">
+				<div class="sub_title">昨日新增订阅</div>
+				<div class="count_info"><span>{{subscribeData.new_subscribe}}</span>万K币</div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-3">
+			<div class="weeks_subscribe rounded">
+				<div class="sub_title">近一周订阅</div>
+				<div class="count_info"><span>{{subscribeData.weeks_subscribe}}</span>万K币</div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-3">
+			<div class="month_subscribe rounded">
+				<div class="sub_title">近一月订阅</div>
+				<div class="count_info"><span>{{subscribeData.month_subscribe}}</span>万K币</div>
+			</div>
+		</div>
+	</div>
+	<div class="table_box">
+		<div>订阅明细<span>解耦我京东我将额外</span></div>
+		<table>
+			<thead>
+				<tr>
+					<td>章节</td>
+					<td>发布时间</td>
+					<td>订阅次数</td>
+					<td>收益订阅K币</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let info of subscribeList">
+					<td>《{{info.chapter}}》</td>
+					<td>{{info.pubDate}}</td>
+					<td>{{info.number}}</td>
+					<td>{{info.kMoney}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

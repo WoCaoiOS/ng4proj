@@ -1,0 +1,73 @@
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+td{
+	width: 25%;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	color: rgb(41,42,44);
+}
+thead td{
+	background: rgb(246,246,246);
+	color: rgb(163,163,163);
+}
+tbody td{
+	border-bottom: 1px dotted rgb(229,229,229)
+}
+.data_box{
+	padding: 10px 30px 30px;
+}
+.total_subscribe{
+	background: rgb(134,147,243);
+	height: 100px;
+	box-shadow: 0px 0px 15px rgb(134,147,243);
+}
+.new_subscribe{
+	background: rgb(255,168,151);
+	height: 100px;
+	box-shadow: 0px 0px 15px rgb(255,168,151);
+}
+.weeks_subscribe{
+	background: rgb(128,216,240);
+	height: 100px;
+	box-shadow: 0px 0px 15px rgb(128,216,240);
+}
+.month_subscribe{
+	background: rgb(177,196,245);
+	height: 100px;
+	box-shadow: 0px 0px 15px rgb(177,196,245);
+}
+.rounded div{
+	color: white;
+	padding: 10px 10px 0;
+	font-size: 12px;
+}
+.rounded div.count_info{
+	text-align: center;
+	margin-top: 10px;
+}
+.rounded div.count_info span{
+	font-size: 19px;
+	font-weight: bolder;
+}
+.table_box{
+	margin: 20px 0;
+	border-top: 10px solid rgb(249,249,249);
+	padding: 30px;
+	padding-top: 10px;
+
+}
+.table_box>div{
+	color: rgb(87,87,87);
+	background: url(../../assets/subscribe.png) no-repeat left center;
+	padding-left: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.table_box>div>span{
+	margin-left: 5px;
+	font-size: 11px;
+	color: #a0a0a0;
+}

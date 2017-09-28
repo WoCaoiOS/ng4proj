@@ -1,0 +1,35 @@
+<div class="container-fluid">
+	<section>
+		<div class="tips_box clearfix">销售统计<span class="fr">销售及稿费说明</span></div>
+	</section>
+	<section>
+		<div>
+			<div>包月统计</div>
+			<form class="form-inline">
+				查询月份
+				<select name="year" class="form-control-sm col-2" [(ngModel)]="info.year">
+     				<option *ngFor="let year of years" [value]="year.value">
+       				{{year.display}}
+    				</option>
+    			</select>
+			  	<select name="month" class="form-control-sm col-2" [(ngModel)]="info.month">
+     				<option *ngFor="let month of months" [value]="month.value">
+       				{{month.display}}
+    				</option>
+    			</select>
+			    <button type="button" class="btn btn-primary btn-sm">查看</button>
+		    </form>
+    	</div>
+		
+	</section>
+	<div class="sale-statistics">
+		<div>{{info.year+"年"+info.month+"月销售统计图"}}</div>
+		<div echarts [options]="chartOption" class="demo-chart"></div>
+		<div>
+			注：<br>
+			1.设计叫期间思考思考强迫我开始破十块钱我<br>
+			2.谁家婆恐怕看破对的跑得快外婆的恐怕我看的破位看
+		</div>
+	</div>
+	
+</div>	

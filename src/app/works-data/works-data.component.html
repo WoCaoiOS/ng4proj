@@ -1,0 +1,24 @@
+<div class="container-fluid">
+	<section>
+		<div class="tips_box clearfix">作品数据
+			<span class="fr">
+				<select name="" id=""  [(ngModel)]="bookID">
+					<option *ngFor="let book of bookList" [value]="book.ID">
+			       		{{book.name}}
+			    	</option>
+				</select>
+			</span>
+		</div>
+	</section>
+	<section class="clearfix">
+		<nav class="nav fl">
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==1}" (click)="changeSegment(1)" routerLink="/works-data/works-statistics" routerLinkActive="true">订阅统计</a>
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==2}" (click)="changeSegment(2)" routerLink="/works-data/red-statistics" routerLinkActive="true">红包统计</a>
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==3}" (click)="changeSegment(3)" routerLink="/works-data/click-statistics" routerLinkActive="true">作品点击分析</a>
+		  <a class="nav-link" href="javascript:" [ngClass]="{'active':tabIndex==4}" (click)="changeSegment(4)" routerLink="/works-data/update-analysis" routerLinkActive="true">作品更新分析</a>	 
+		</nav> 
+	</section>
+	<section>
+		 <router-outlet></router-outlet>
+	</section>
+</div>

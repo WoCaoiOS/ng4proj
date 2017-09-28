@@ -1,0 +1,28 @@
+<div class="container-fluid">
+	<section>
+		<div class="tips_box clearfix">申请上架<span class="fr">什么是上架</span></div>
+	</section>
+	<section class="table_box">
+		<table>
+				<thead>
+					<tr>
+						<td>书号</td>
+						<td>书籍名称</td>
+						<td>评论数</td>
+						<td>管理</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let comInfo of commentList;let i=index;">
+						<td>{{comInfo.bookID}}</td>
+						<td>{{comInfo.bookName}}</td>
+						<td>{{comInfo.commentCount}}</td>
+						<td>
+							<span (click)="deleteCom(i)">删除</span>
+							<span>回复</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+</div>

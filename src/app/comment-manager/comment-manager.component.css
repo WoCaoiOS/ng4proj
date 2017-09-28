@@ -1,0 +1,10 @@
+.table_box{
+	padding: 20px;
+}
+tbody td{
+	color: rgb(64,64,64);
+}
+td span{
+	padding: 5px;
+	cursor: default;
+}

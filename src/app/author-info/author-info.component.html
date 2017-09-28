@@ -1,0 +1,80 @@
+<div class="container-fluid">
+	<section>
+		<div class="tips_box clearfix">作家资料<span class="fr">作者后台新手指南</span></div>
+	</section>
+	<section>
+		<div class="row">
+		  	<div class="col-3"></div>
+		  	<div class="col-5"><img class="head_pic" src="../../assets/head.jpg" alt=""></div>
+		</div>
+		<div class="row">
+			<div class="col-3">笔名</div>
+			<div class="col-5">{{user.penName}}</div>
+		</div>
+		<div class="row">
+			<div class="col-3">昵称</div>
+			<div class="col-5">{{user.nickerName}}</div>
+		</div>
+		<div class="row">
+			<div class="col-3">编号</div>
+			<div class="col-5">{{user.serialNo}}</div>
+		</div>
+		<div class="row">
+			<div class="col-3">性别</div>
+			<div class="col-5">
+				<label *ngFor="let gender of genders;">
+      				<input type="radio" name="gender" [(ngModel)]="user.sex" [value]="gender.value">
+            		{{gender.display}}
+            	</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">真是姓名</div>
+			<div class="col-5">
+				<input class="form-control" type="text" name="userName" placeholder="请输入用户名" [(ngModel)]="user.trueName">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">手机号</div>
+			<div class="col-5">
+				<input class="form-control" type="text" name="userName" placeholder="请输入用户名" [(ngModel)]="user.trueName">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">QQ号</div>
+			<div class="col-5">
+				<input class="form-control" type="text" name="userName" placeholder="请输入用户名" [(ngModel)]="user.QQNumber">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">邮箱号</div>
+			<div class="col-5">
+				<input class="form-control" type="text" name="userName" placeholder="请输入用户名" [(ngModel)]="user.email">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">身份证</div>
+			<div class="col-5">
+				<input class="form-control" type="text" name="userName" placeholder="请输入用户名" [(ngModel)]="user.IDcard">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">地址</div>
+			<div class="col-7">
+				<input class="form-control" type="text" name="userName" placeholder="请输入用户名" [(ngModel)]="user.address">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">简介</div>
+			<div class="col-7">
+				<textarea class="form-control introduce_text" id="exampleTextarea"></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-7">
+				<button type="button" class="btn btn-primary btn-sm">保存</button>
+			</div>
+		</div>
+	</section>
+</div>
